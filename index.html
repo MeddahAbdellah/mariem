@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariem's Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root {
+        --background: #eeeeee;
+        --text: #17202a;
+        --rhyme: #784212;
+        --text-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+        --text-shadow-rhyme: 0 0 0 rgba(0, 0, 0, 0.5);
+
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          height: 100dvh;
+          position: relative;
+        }
+        .next {
+          all: unset;
+          position: absolute;
+          top: 85%;
+          left: 85%;
+          height: 50px;
+          width: 50px;
+          background-color: #512da8;
+          border-radius: 100%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+          transition: 0.5s ease;
+          z-index: 100;
+        }
+        .next svg {
+          width: 25px;
+          height: 25px;
+        }
+        .honesty {
+          --background: #eeeeee;
+          --text: #17202a;
+          --rhyme: #784212;
+          z-index: 0;
+        }
+        .curiosity {
+          --background: #512da8;
+          --text: #eeeeee;
+          --rhyme: #f1c40f;
+          --text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          --text-shadow-rhyme: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+        .trust {
+          --background: #1565c0;
+          --text: #eeeeee;
+          --rhyme: #f1c40f;
+          --text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          --text-shadow-rhyme: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          z-index: 2;
+        }
+        .beauty {
+          --background: #fbc02d;
+          --text: #eeeeee;
+          --rhyme: #17202a;
+          --text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          --text-shadow-rhyme: 0px 0px 1px rgba(0, 0, 0, 0.5);
+          z-index: 3;
+        }
+
+        .sexy {
+          --background: #e91e63;
+          --text: #eeeeee;
+          --rhyme: #17202a;
+          --text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+          --text-shadow-rhyme: 0px 0px 1px rgba(0, 0, 0, 0.5);
+          z-index: 3;
+        }
+
+        .container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: var(--background);
+          height: 100%;
+          width: 100%;
+          clip-path: circle(200% at 85% 85%);
+          transition: clip-path 1s ease;
+          display: flex;
+          justify-content: center;
+        }
+        .container.hidden {
+          clip-path: circle(0 at 85% 85%);
+        }
+        p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          margin: 0;
+          font-size: 1.1em;
+          padding-inline: 20px;
+          padding-block: 10px;
+          text-shadow: var(--text-shadow);
+          color: var(--text);
+        }
+        .big {
+          font-size: 3em;
+          font-weight: 900;
+          margin-top: 170px;
+          margin-bottom: 50px;
+          padding: 10px;
+          white-space: nowrap;
+        }
+        .sub-text {
+          white-space: nowrap;
+          margin-left: 30px;
+        }
+        .rhyme {
+          text-shadow: var(--text-shadow-rhyme);
+          color: var(--rhyme);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container honesty">
+      <div>
+        <p class="big">
+          Your soul <br />
+          <span class="sub-text">is the <span class="rhyme">purest</span></span>
+        </p>
+
+        <p>
+          Your words and actions are the
+          <span class="rhyme">kindest</span>.
+        </p>
+        <p>
+          I feel taken care of by your presence, it gets me higher than mount
+          <span class="rhyme">everest</span>.
+        </p>
+        <p>
+          My heart eases to the sound of your voice, it is the
+          <span class="rhyme"> lightest </span>.
+        </p>
+      </div>
+    </div>
+    <div class="container curiosity hidden">
+      <div>
+        <p class="big">
+          Always a breeze <br />
+          to converse with <br />
+          a curious <br />
+          and fun <span class="rhyme">mind</span>
+        </p>
+        <p>
+          Hours feel like minutes, navigating subjects of every
+          <span class="rhyme">kind</span>.
+        </p>
+        <p>
+          Everytime we talk I find myself stumbling upon a new mindful
+          <span class="rhyme">find</span>.
+        </p>
+      </div>
+    </div>
+    <div class="container trust hidden">
+      <div>
+        <p class="big">
+          Every one who <br />
+          knows you, <br />
+          certainly knows, <br />
+          you <span class="rhyme">never betray</span>
+        </p>
+        <p>
+          Your honest goodness added to your character makes you trustworthy in
+          a whole other <span class="rhyme">way</span>.
+        </p>
+        <p>
+          You care about what matters to the person so it's soul be at rest it
+          <span class="rhyme">may</span>.
+        </p>
+      </div>
+    </div>
+    <div class="container beauty hidden">
+      <div>
+        <p class="big">
+          Without a verse <br />
+          on that smile, <br />
+          This poem, <br />
+          isn't <span class="rhyme">complete</span>
+        </p>
+        <p>
+          A delightful sight, so beautiful and
+          <span class="rhyme">sweet</span>.
+        </p>
+        <p>At it's sight the heart skips a <span class="rhyme">beat</span>.</p>
+        <p>
+          Emits such positive energy, even a cripple would stand on his
+          <span class="rhyme">feet</span>.
+        </p>
+      </div>
+    </div>
+    <div class="container sexy hidden">
+      <div>
+        <p class="big">
+          I think about <br />
+          you even when <br />
+          my eyes <br />
+          are <span class="rhyme">closed</span>
+        </p>
+        <p>
+          All of you is beautiful, but your body burns the
+          <span class="rhyme">cold</span>.
+        </p>
+        <p>Turns every coward <span class="rhyme">bold</span>.</p>
+        <p>
+          A body men used to go to wars for, a body that's worth more than
+          diamonds and
+          <span class="rhyme">gold</span>.
+        </p>
+      </div>
+    </div>
+    <button class="next" id="next">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0,0,256,256"
+        width="48px"
+        height="48px"
+        fill-rule="nonzero"
+      >
+        <g
+          fill="#fcfafa"
+          fill-rule="nonzero"
+          stroke="none"
+          stroke-width="1"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          stroke-dasharray=""
+          stroke-dashoffset="0"
+          font-family="none"
+          font-weight="none"
+          font-size="none"
+          text-anchor="none"
+          style="mix-blend-mode: normal"
+        >
+          <g transform="scale(4,4)">
+            <path
+              d="M31,33c-0.552,0 -1,0.448 -1,1c0,0.186 0,7.814 0,8c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1c0,-0.186 0,-7.814 0,-8c0,-0.552 -0.448,-1 -1,-1zM37,33c-0.552,0 -1,0.448 -1,1c0,0.186 0,7.814 0,8c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1c0,-0.186 0,-7.814 0,-8c0,-0.552 -0.448,-1 -1,-1zM43,33c-0.552,0 -1,0.448 -1,1c0,0.186 0,7.814 0,8c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1c0,-0.186 0,-7.814 0,-8c0,-0.552 -0.448,-1 -1,-1zM51.779,20.384c2.379,0.849 3.221,3.179 3.221,6.085c0,0.27 -0.004,4.13 -0.004,5.014c0,11.377 -5.996,11.597 -5.996,17.543c0,1.576 -0.143,3.502 -0.641,4.037c-0.628,0.675 -0.814,0.937 -2.28,0.937c-0.125,0 -1.979,0 -2.117,0c-2.962,0 -4.582,-2.913 -4.582,-2.913c0,0 -2.036,2.913 -4.03,2.913c-0.925,0 -6.688,0 -8.191,0c-0.364,0 -1.795,-0.206 -2.325,-1.289c-0.575,-1.175 0.209,-2.529 -0.539,-4.144c-0.842,-1.819 -5.754,-4.669 -8.113,-9.472c-3.237,-6.591 -6.588,-8.649 -6.645,-11.453c-0.07,-3.465 2.658,-4.561 4.516,-4.561c3.615,0 7.061,4.358 7.061,4.358c0,0 -2.935,-11.352 -3.273,-13.363c-0.714,-4.247 -0.209,-6.599 2.581,-7.579c3.565,-1.253 5.773,1.846 7.082,5.047c0.824,2.016 2.364,6.744 2.364,6.744c0,0 1.912,-1.496 3.942,-1.366c3.044,0.195 4.236,1.881 4.236,1.881c0,0 2.119,-1.931 5.241,-1.275c2.849,0.599 3.933,3.121 3.933,3.121c0,0 2.153,-1.124 4.559,-0.265z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <script>
+      const next = document.getElementById("next");
+      const containers = document.querySelectorAll(".container");
+      const buttonColors = [
+        "#512da8",
+        "#1565c0",
+        "#fbc02d",
+        "#17202a",
+        "#e91e63",
+      ];
+      let current = 0;
+
+      next.addEventListener("click", () => {
+        const previous = current;
+        setTimeout(() => {
+          containers[previous].classList.add("hidden");
+        }, 500);
+        current = (current + 1) % containers.length;
+        next.style.backgroundColor = buttonColors[current];
+        containers[current].classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>
